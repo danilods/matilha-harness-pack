@@ -161,21 +161,17 @@ model).
 
 ## Concrete Example
 
-A team has a six-month-stuck migration from REST to GraphQL at five
-percent completion. The old playbook ("gradual over quarters, careful
-per-endpoint reviews") has not moved the needle since week two. Under
-the code-is-free lens: fifteen agents fan out across the remaining
-endpoints in parallel, each writing the migration plus the NFR-mandated
-retry/timeout/pagination wrapper. Reviewers triage in hub-and-spoke
-mode — review agents catch the per-persona NFRs, humans focus on the
-two endpoints with subtle business-logic shifts. Migration closes in
-two weeks. Separately, twelve P3s that had been frozen in the backlog
-since 2025 get fired four-way in parallel; the team merges the best
-implementation for each. None of this would have been the right call
-when implementation was the scarce resource. The freed engineering
-capacity goes into writing NFR docs for two undocumented personas
-(reliability and security), which then catch a class of slop in the
-next sprint's agent output before it reaches review.
+Team's GraphQL migration stuck at five percent for six months. Old playbook
+("gradual over quarters, careful reviews") failed—implementation became the
+bottleneck, burning engineer time on slow consensus. Switching lens: fifteen
+agents fan out on the remaining endpoints in parallel. Each writes migration
+plus NFR-mandated wrappers (retry, timeout, pagination). Reviewers triage
+hub-and-spoke (review agents catch per-persona NFRs, humans focus on
+business-logic endpoints). Migration ships in two weeks. Freed capacity
+redirects to writing NFR docs for undocumented personas (reliability,
+security), catching whole classes of slop in future agent output before
+review. Separately, twelve stuck P3s fan out four-way; team picks the best
+per-task. None of this pencils under the old scarcity model.
 
 ## Sources
 

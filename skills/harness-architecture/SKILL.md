@@ -78,8 +78,9 @@ sprint contract before any code is written.
 ## Rules: Don't
 
 - Don't use the Generator's own self-eval as the gating signal for sprint
-  acceptance. Lopopolo's axiom: "Code is free" applies — generating a
-  fresh Evaluator pass is cheap; trusting the author of the patch is not.
+  acceptance. Per Lopopolo's axiom (code is free — implementation is no
+  longer the scarce resource), generating a fresh Evaluator pass is cheap;
+  trusting the author of the patch is not.
 - Don't let the Planner descend into implementation detail. A Planner that
   picks ORM versions has stolen the Generator's job and locked in errors.
 - Don't run a Generator-only loop "for now, we'll add Evaluator later".

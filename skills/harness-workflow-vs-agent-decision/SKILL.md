@@ -34,19 +34,18 @@ and points at one of the agentic patterns (or no agent at all).
    route to Y" or "transform A into B in N steps", you are likely in
    workflow territory. If it reads "investigate why X is broken" or
    "build the right thing for Y", you are likely in agent territory.
-2. Run the decision tree. Ask in order: (a) does the task have a binary
-   success criterion? (b) are the steps predictable a priori? (c) does
-   any step branch on classification of the input? (d) are sub-tasks
-   independent and parallel? (e) does refinement against a critic add
-   measurable value?
-3. From the answers, pick the pattern. Predictable steps with binary
-   success → prompt chaining. Categorized input → routing (see
-   `harness-routing-parallelization`). Independent parallel sub-tasks →
-   parallelization sectioning. Multiple opinions wanted → parallelization
-   voting. Sub-tasks unpredictable → orchestrator-workers (see
-   `harness-orchestrator-workers`). Refinement loop helps → evaluator-
-   optimizer (see `harness-evaluator-optimizer-loop`). Open-ended,
-   environment supports autonomy → agent.
+2. Run the decision tree:
+   - Q1: Does the task have binary success criteria + predictable steps?
+     → YES: Proceed to Q2 (Workflow territory)
+     → NO: Proceed to Q3 (Agent territory)
+   - Q2: How do steps decompose?
+     → Sequential, fixed → Prompt Chaining
+     → Categorized input → Routing (see `harness-routing-parallelization`)
+     → Independent parallel → Parallelization (see `harness-routing-parallelization`)
+     → Refinement loop helps → Evaluator-Optimizer (see `harness-evaluator-optimizer-loop`)
+   - Q3: Can sub-tasks be decomposed dynamically?
+     → YES: Orchestrator-Workers (see `harness-orchestrator-workers`)
+     → NO: Open-ended exploration → Agent (with tools + stopping condition)
 4. Sanity-check by asking: would a single LLM call plus retrieval solve
    this? Many problems do not need agentic systems at all. Agents trade
    latency and cost for performance on hard tasks; if the task is not
