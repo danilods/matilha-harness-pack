@@ -1,0 +1,10 @@
+{
+  "name": "matilha-harness-pack",
+  "displayName": "Matilha Harness Pack",
+  "description": "22 harness-engineering skills for Matilha — Anthropic harness/agentic/context/evals + OpenAI Codex agent-centric + Lopopolo operational rituals. Companion pack: works with matilha-skills for full integration.",
+  "author": "Danilo de Sousa",
+  "category": "workflow",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": "https://github.com/danilods/matilha-harness-pack"
+}

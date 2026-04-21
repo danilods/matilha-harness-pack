@@ -1,0 +1,26 @@
+{
+  "name": "matilha-harness-pack",
+  "version": "0.1.0",
+  "description": "Matilha companion pack — 22 harness-engineering skills synthesized from Anthropic, OpenAI Codex, and Lopopolo (token billionaire) on agent architecture, context engineering, and team rituals. You lead. Agents hunt.",
+  "author": {
+    "name": "Danilo de Sousa"
+  },
+  "homepage": "https://github.com/danilods/matilha-harness-pack",
+  "repository": "https://github.com/danilods/matilha-harness-pack",
+  "license": "MIT",
+  "keywords": [
+    "matilha-pack",
+    "harness",
+    "agents",
+    "agentic-patterns",
+    "context-engineering",
+    "evals",
+    "anthropic",
+    "openai-codex",
+    "cross-tool",
+    "claude-code",
+    "cursor",
+    "codex",
+    "gemini"
+  ]
+}
