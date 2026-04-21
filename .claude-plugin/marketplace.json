@@ -13,7 +13,7 @@
   "plugins": [
     {
       "name": "matilha-harness-pack",
-      "source": ".",
+      "source": "./",
       "description": "22 harness-engineering skills auto-activated when matching user intent.",
       "version": "0.1.0",
       "category": "harness",
