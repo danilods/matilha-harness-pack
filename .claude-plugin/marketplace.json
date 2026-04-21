@@ -1,23 +1,10 @@
 {
-  "$schema": "https://json.schemastore.org/claude-code-plugin-marketplace.json",
   "name": "matilha-harness-pack",
-  "owner": {
-    "name": "Danilo de Sousa",
-    "email": "danilod2.sousa@gmail.com",
-    "url": "https://github.com/danilods"
-  },
-  "metadata": {
-    "description": "Matilha companion pack — harness engineering skills (Anthropic + OpenAI Codex + Lopopolo).",
-    "version": "0.1.0"
-  },
-  "plugins": [
-    {
-      "name": "matilha-harness-pack",
-      "source": ".",
-      "description": "22 harness-engineering skills auto-activated when matching user intent.",
-      "version": "0.1.0",
-      "category": "harness",
-      "tags": ["matilha-pack", "harness", "agents", "evals"]
-    }
-  ]
+  "displayName": "Matilha Harness Pack",
+  "description": "22 harness-engineering skills for Matilha — Anthropic harness/agentic/context/evals + OpenAI Codex agent-centric + Lopopolo operational rituals. Companion pack: works with matilha-skills for full integration.",
+  "author": "Danilo de Sousa",
+  "category": "workflow",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": "https://github.com/danilods/matilha-harness-pack"
 }
