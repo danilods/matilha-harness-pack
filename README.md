@@ -16,11 +16,18 @@ This pack codifies discipline for teams running AI-assisted development:
 
 ## Install
 
-### Claude Code (via Matilha marketplace)
+### Claude Code (recommended: user scope)
+
+Install at user scope so the pack is available in every workspace, not just per-project:
 
 ```
-/plugin install matilha-harness-pack
+/plugin marketplace add danilods/matilha-harness-pack
+/plugin install matilha-harness-pack@matilha-harness-pack --user
 ```
+
+(If `--user` is not recognized, use the interactive `/plugin` menu and select **user scope**.)
+
+When [matilha core](https://github.com/danilods/matilha-skills) is also installed, its `matilha-compose` gateway auto-detects this pack via plugin-namespace inspection (`matilha-*-pack`) and injects pack-aware preamble into brainstorming sessions whenever user intent touches agent architecture, context engineering, evals, or team operational concerns. The pack also works standalone — skills activate via their own descriptions when intent matches.
 
 Or locally during development:
 
