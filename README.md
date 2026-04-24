@@ -2,6 +2,8 @@
 
 > **You lead. Agents hunt. A harness for building complex projects with AI.**
 
+> 🏠 **This is a companion pack.** The official matilha entry point is [**danilods/matilha-skills**](https://github.com/danilods/matilha-skills) — start there for the full install guide + ecosystem overview. Install this pack only after the core is set up (via `/matilha-install` in Claude Code, or the explicit commands below).
+
 A Matilha companion pack with **22 harness-engineering skills** synthesized from Anthropic engineering posts, OpenAI's Codex agent-centric blog, and Ryan Lopopolo's "Harness Engineering" talk (AI Engineer London 2026).
 
 This pack codifies discipline for teams running AI-assisted development:
