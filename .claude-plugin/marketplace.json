@@ -8,14 +8,14 @@
   },
   "metadata": {
     "description": "Matilha companion pack — harness engineering skills (Anthropic + OpenAI Codex + Lopopolo).",
-    "version": "0.1.0"
+    "version": "0.2.0"
   },
   "plugins": [
     {
       "name": "matilha-harness-pack",
       "source": "./",
       "description": "22 harness-engineering skills auto-activated when matching user intent.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "category": "harness",
       "tags": ["matilha-pack", "harness", "agents", "evals"]
     }
